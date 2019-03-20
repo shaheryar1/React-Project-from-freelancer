@@ -2,30 +2,33 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ComputeIO from './ComputeIO'
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import NavBar from './NavBar';
+import SideBar from './SideBar';
+import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+
 
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      {/* <ComputeIO></ComputeIO> */}
-      
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
-      </div>
+<div>
+<NavBar></NavBar>
+
+       
+        <MDBRow >
+          <MDBCol >abc</MDBCol>
+          <MDBCol size="2">
+            <SideBar></SideBar>        
+          </MDBCol>
+        </MDBRow>
+   
+</div>
+    
+
     );
   }
 }
