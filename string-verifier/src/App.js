@@ -2,29 +2,30 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ComputeIO from './ComputeIO'
-
+import NavBar from './NavBar';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import ProfileCard from './ProfileCard';
+import Footer from './Footer';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      {/* <ComputeIO></ComputeIO> */}
-      
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
+      <div className="app ">
+         <div className="d-flex flex-row" >
+      <div className="p-1">  <ProfileCard></ProfileCard></div>
+      <div className="p-1">  <ProfileCard></ProfileCard></div>
+      <div className="p-1">  <ProfileCard></ProfileCard></div>
+    
+      <div className="p-1">  <ProfileCard></ProfileCard></div>
+    </div>
+     
+     <Footer></Footer>
+    
+     
+     
       </div>
     );
   }
