@@ -6,9 +6,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.app{
+ 
+  /* margin: 100px; */
+}
+.my-card{
+  
+  /* margin: 10px !important; */
+  padding: 6px 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+}
+.round-btn{
+  padding: 10px 25px !important;
+  border-radius:50px !important;
+ 
+}
+.text-description{
+  font-size: 0.9em;
+  color: grey;
+}
+
+
+.footer-table {
+  width: 100%;
+  padding: 20px !important;
+  background-color:#001527;
+  color: white;
+}
+.footer-table td  {
+  width:25%;
+  align-content: flex-end;
+}
+.footer-table tr  {
+  margin: 20px;
 }
