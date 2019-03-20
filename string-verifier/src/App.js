@@ -14,12 +14,20 @@ class App extends Component {
   render() {
     return (
       <div className="app ">
+
+
+
          <div className="d-flex flex-row" >
       <div className="p-1">  <ProfileCard></ProfileCard></div>
       <div className="p-1">  <ProfileCard></ProfileCard></div>
       <div className="p-1">  <ProfileCard></ProfileCard></div>
-    
       <div className="p-1">  <ProfileCard></ProfileCard></div>
+    </div>
+    <div className="row">
+   
+   <div className="col-md-4"></div>
+   <div className="col-md-4"></div>
+   <div className="col-md-4"></div>
     </div>
      
      <Footer></Footer>
