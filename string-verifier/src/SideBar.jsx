@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter } from 'react-router-dom'
 import {MDBNavItem,MDBNavLink,MDBNav,MDBRow,MDBIcon,MDBContainer,MDBCol,MDBCard } from 'mdbreact';
+import { Segment } from "semantic-ui-react";
 
 
 class SideBar extends Component {
@@ -8,8 +9,8 @@ class SideBar extends Component {
 
   render() {
     return (
-        <MDBCard>
-<MDBContainer>
+        <div>
+<MDBContainer className="mb-3">
 <MDBRow className="pl-1">
     <MDBCol className="m-0 p-0">
 <MDBIcon icon="question-circle" size="3x" className="blue-text m-1"></MDBIcon>
@@ -170,7 +171,7 @@ class SideBar extends Component {
 
 </BrowserRouter>
 
-<MDBContainer>
+<MDBContainer className="mt-4">
 <MDBRow className="pl-1">
     <MDBCol className="m-0 p-0">
 <MDBIcon icon="question-circle" size="3x" className="grey-text m-1"></MDBIcon>
@@ -191,7 +192,8 @@ class SideBar extends Component {
 </MDBRow>
     
 </MDBContainer>
-</MDBCard>
+</div>
+
      
           
 

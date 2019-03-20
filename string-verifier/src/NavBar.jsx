@@ -55,7 +55,7 @@ class NavBar extends Component {
             <MDBDropdownItem href="#!"> جروباتي</MDBDropdownItem>
           </MDBDropdownMenu>
         </MDBDropdown>
-        <MDBCol md="6">
+        <MDBCol md="6" className="mt-3">
           <MDBInput hint=" مفضلتي مفضلتي" type="text" className="white-text text-right primary-color-dark pr-4" containerClass="active-primary-color-dark active-primary-color-dark-2 mt-0 mb-3" />
         </MDBCol>
         <MDBNavbarNav right>
