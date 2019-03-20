@@ -14,6 +14,8 @@ import TabbbedFeeds from './TabbedFeeds';
 import { Segment, Tab, Label, Icon, Button } from 'semantic-ui-react';
 import EditFeed from './EditFeed';
 import Feed from './Feed';
+import LeftSideBar from './LeftSideBar';
+import imgee from './icons/hqdefault.png';
 
 
 class App extends Component {
@@ -41,7 +43,7 @@ class App extends Component {
                   <div className="p-1">  <ProfileCard></ProfileCard></div>
                   <div className="p-1">  <ProfileCard></ProfileCard></div>
                   <div className="p-1">  <ProfileCard></ProfileCard></div>
-                  <div className="p-1">  <ProfileCard></ProfileCard></div>
+                 
 
                 </div>
               </MDBCol>
@@ -54,17 +56,16 @@ class App extends Component {
             </MDBRow>
 
             <MDBRow className="w-100 text-center">
-              <MDBCol size="3" className="m-3">
-                <Segment raised>
-                  {/*shery ka kam  */}
-                </Segment>
-              </MDBCol>
+             
+                  <LeftSideBar></LeftSideBar>
+           
 
               <MDBCol className="m-3">
-                <Segment raised style={{ padding: '0px' }}>
-                  <img width="100%" height="400px" src="https://react.semantic-ui.com/images/avatar/large/daniel.jpg"></img>
-                </Segment>
-
+               <Segment raised>
+               <img  width="100%" height="400px" src={imgee}></img>
+               </Segment>
+                  
+              
                <EditFeed/>
 
                <Feed></Feed>
@@ -79,12 +80,17 @@ class App extends Component {
           <MDBCol size="2" className="h-auto white shadow-box-example z-depth-3">
             <SideBar></SideBar>
           </MDBCol>
+          
+    
+          
         </MDBRow>
 
 
+        <MDBRow  className="mt-4">
+      <MDBCol size="12">
         <Footer></Footer>
-
-
+        </MDBCol>
+</MDBRow>
 
       </div>
 
